@@ -1,15 +1,24 @@
-/*
-    Task
-    - Implement a switch statement to check against `env` environmental variable.
-    - If `env` is "DEV", no change to `databaseCredential`.
-    - If `env` is "STAGE", modify `databaseCredential` to "stageuser:password".
-    - If `env` is "PROD", modify `databaseCredential` to "produser:password"
+const env = "DEV";                              //Toggle between these values: "DEV" | "STAGE" | "PROD"
+let databaseCredential = "devuser:password";    //declare database credential as devuser:password
+
+switch (env) 
+{
+    case "STAGE":
+    databaseCredential = "stageuser:password";      //if staging is declared in env, database credential will be stageuser: password
+    break;
+
+    case "PROD":
+    databaseCredential = "produser:password";       //if production is declared in env, database credential will be produser: password
+    break;
+
     
-*/
+    case "DEV":
+    // No change
+    break;
 
-const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
-let databaseCredential = "devuser:password";
+    default:
+    console.log("Invalid environment");             //Default case is added to handle invalid env case.
+    break;
+}//end of switch (env)
 
-// Task: Add code here
-
-console.log(`Database credential for environment ${env} is ${databaseCredential}`);
+console.log(`Database credential for environment ${env} is ${databaseCredential}`); //print out the database environment credential

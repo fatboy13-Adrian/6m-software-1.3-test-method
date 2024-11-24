@@ -1,16 +1,22 @@
-const addFunc = (a, b, c) => {
+const addFunc = (a, b, c) => 
+{
     return a + b + c;
 }
 
-const isDivisibleBy5 = (num1) => {
-    if (num1 % 5 == 0){
+const isDivisibleBy5 = (num1) => 
+{
+    if (num1 % 5 == 0)
+    {
         return true;
-    } else {
+    } 
+    else 
+    {
         return false;
     }
 }
 
-module.exports = {
+module.exports = 
+{
     addFunc,
     isDivisibleBy5
 }
