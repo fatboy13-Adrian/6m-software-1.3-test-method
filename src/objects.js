@@ -2,19 +2,22 @@
 let empty = {};
 
 // Initializing object with default value
-const person = {
+const person = 
+{
     name:"John Doe",
     yearOfBirth: 1987
-}
+}//End of const person obj
+
 console.log("person", person);
 
 // Retrieve the value of "yearOfBirth" property
 console.log("I am born in", person.yearOfBirth);
 
 // Looping an object
-for(let key in person){
+for(let key in person)
+{
     console.log("key is", key, "and value is", person[key]);
-}
+}//End of for loop
 
 /*Class discussion
 Break out into groups and discussion what are the following:
@@ -40,9 +43,9 @@ const school =
     yearEstablished: 1949,                              //Set year established as 1949
     isActive: true,                                    //Set is active as true             
     coursesOffered: ['english', 'Maths', 'Science']    //Array of courses offered by the school
-};//end of school
+};//end of school obj
 
-//Print message using school object with school name and courses offered
-console.log(`Welcome to ${school.schoolName} and we offer ${school.coursesOffered.join(", ")}.`);   
+
+console.log(`Welcome to ${school.schoolName} and we offer ${school.coursesOffered.join(", ")}.`);   //Print message using school object with school name and courses offered  
 
 

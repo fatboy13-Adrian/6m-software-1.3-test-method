@@ -40,10 +40,14 @@ console.log("Value of i is ", i, "and value stored in i is ", grades[i]);
 1. Use array methods to combine the two arrays and remove all even-indexed values
 */
 
+//Create / declare array lists and populate it with numbers
 const arr1 = [15, 12, 11, 29, 5];
 const arr2 = [13, 2, 6, 7];
 
-const combinedArr = arr1.concat(arr2);                                  //Combine 2 arrays using concat
-const resultArr = combinedArr.filter((_, index) => index % 2 !== 0);    //Filter out even index values using filter and index parameters
+const combinedArr = arr1.concat(arr2);  //Combine 2 array lists using concat
 
-console.log(resultArr);                                                 //Output result
+const resultArr = combinedArr                                       //Use map to set even - indexed values to undefined and then filter the odd numbers out
+    .map((value, index) => (index % 2 !== 0 ? value : undefined))   //Mark even - indexed values as undefined
+    .filter(value => value !== undefined);                          // Remove undefined values
+
+console.log(resultArr);                                              //Output result
