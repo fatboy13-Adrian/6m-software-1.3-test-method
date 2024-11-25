@@ -17,12 +17,12 @@ We will be spending the first hour to learn about software testings, and next 2 
 Source: https://www.javatpoint.com/software-engineering-software-development-life-cycle
 
 1. *Requirement* Analysis - Gathering the business and technical requirements.
-1. *Defining* - Defining the functional and non-functional requirements.
-1. *Designing* - Translating the functional requirements into workable tasks.
-1. *Coding* - Writing code a.k.a. development phase.
-1. *Testing* - Ensuring the outcome of development aligns with the defined requirements.
-1. *Deployment* - Going live into production.
-1. *Maintenance* - Monitoring systems health and fix errors when arises.
+2. *Defining* - Defining the functional and non-functional requirements.
+3. *Designing* - Translating the functional requirements into workable tasks.
+4. *Coding* - Writing code a.k.a. development phase.
+5. *Testing* - Ensuring the outcome of development aligns with the defined requirements.
+6. *Deployment* - Going live into production.
+7. *Maintenance* - Monitoring systems health and fix errors when arises.
 
 ---
 
@@ -40,11 +40,11 @@ Source: https://www.javatpoint.com/software-engineering-software-development-lif
 
 1. *Performance Test* - A non functional test to determine the stability, speed, responsiveness and resilience of the system.
     1. Load Test - Simulate an increasing amount of traffics/requests sent to the system.
-    1. Stress Test - Determine the peak load and/or how much requests the system can receive.
-    1. Endurance Test - Determine the behaviour of the system at the peak load over time.
-1. *Security Test* -
+    2. Stress Test - Determine the peak load and/or how much requests the system can receive.
+    3. Endurance Test - Determine the behaviour of the system at the peak load over time.
+2. *Security Test* -
     1. Dependency Vulnerabilities - Scanning for vulnerabilities introduced by dependencies.
-    1. Secrets & Data Storage Strategy - Determine how secure are secrets and sensitive data being stored.
+    2. Secrets & Data Storage Strategy - Determine how secure are secrets and sensitive data being stored.
 ---
 
 ## Part 3 - Group Discussion
