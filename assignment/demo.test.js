@@ -5,25 +5,23 @@ const {studentList, printStudentNames} = require("./q2-arrays-loop");
 const {convert} = require("./q3-objects");
 
 //The describe () creates a block that groups together several related tests
-describe("Demo", ()=>{
+describe("Demo", ()=>
+{
     //it() describes a single test
-    it("should test the printStudentNames function of q2", ()=>{
-        //The spyOn creates a mock function based on the method inside, in this case console.log
-        const spyFn = jest.spyOn(console, "log");
-        printStudentNames();
-        //Methods can be chained to check if values meet certain conditions
-        //toHaveBeenCalledTimes() expects the function to be called x number of times
-        expect(spyFn).toHaveBeenCalledTimes(studentList.length);
-    })
+    it("should test the printStudentNames function of q2", ()=> 
+    {
+        const spyFn = jest.spyOn(console, "log");                   //The spyOn creates a mock function based on the method inside, in this case console.log
+        printStudentNames();                                        //Methods can be chained to check if values meet certain conditions
+        expect(spyFn).toHaveBeenCalledTimes(studentList.length);    //toHaveBeenCalledTimes() expects the function to be called x number of times
+    })//end of it()
 
-    it("should test the convert function of q3", ()=>{
+    it("should test the convert function of q3", ()=>
+    {
         const keyArr = ["NLB1", "NLB2"];
         const valueArr = ["Book A", "Book B"];
-
         const result = convert(keyArr, valueArr);
-        //the toBe() can be used to match specific values
-        expect(result["NLB1"]).toBe("Book A");
+        expect(result["NLB1"]).toBe("Book A");                      //the toBe() can be used to match specific values
         expect(result["NLB2"]).toBe("Book B");
-    })
+    })//end of it()
 })
 //So when the command `npm run test` is run, it calls the test suite and runs the individual tests.
