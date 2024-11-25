@@ -32,3 +32,17 @@ Exercise:
     d. coursesOffered - Array containing 3 Strings
 2. Print in the console the following sentence using the "school object" - "Welcome to <name> and we offer <coursesOffered>
 */
+
+//Create a school object
+const school = 
+{
+    schoolName: "yumin primary school",                //Create school name variable
+    yearEstablished: 1949,                              //Set year established as 1949
+    isActive: true,                                    //Set is active as true             
+    coursesOffered: ['english', 'Maths', 'Science']    //Array of courses offered by the school
+};//end of school
+
+//Print message using school object with school name and courses offered
+console.log(`Welcome to ${school.schoolName} and we offer ${school.coursesOffered.join(", ")}.`);   
+
+
