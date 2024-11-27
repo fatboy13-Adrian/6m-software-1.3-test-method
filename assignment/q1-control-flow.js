@@ -11,7 +11,6 @@ switch (env)
     databaseCredential = "produser:password";       //if production is declared in env, database credential will be produser: password
     break;
 
-    
     case "DEV":
     // No change
     break;
