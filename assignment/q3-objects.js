@@ -4,12 +4,12 @@ let booksObj = {};                                                              
 
 function convert(keyArr, valueArr)
 {
-        let resultObj ={};                              //Create a local scoped object literal named result object
-        for(let i = 0; i < keyArr.length; i++)          //Define a for loop that run based on keyArr's length
-        {
-            resultObj[keyArr[i]] = valueArr[i];         //Inside the for loop, add the key and value to local scoped object, result object
-        }//End of for loop()
-        return resultObj;                               //Return the result object literal after the for loop code block.
+        let resultObj ={};                          //Create a local scoped object literal named result object
+        
+        for(let i = 0; i < keyArr.length; i++)      //Define a for loop that run based on keyArr's length
+        resultObj[keyArr[i]] = valueArr[i];         //Inside the for loop, add the key and value to local scoped object, result object
+        
+        return resultObj;                           //Return the result object literal after the for loop code block.
 }//end of function convert()
 
 function printByKey(key)
